@@ -8,5 +8,8 @@ package club.dafty.jvm.classloader;
 public class ClassLoaderDemo {
     public static void main(String[] args) {
         Object o = new Object();
+        System.out.println("o - "+o.getClass().getClassLoader());
+        ClassLoaderDemo demo = new ClassLoaderDemo();
+        System.out.println("demo - "+demo.getClass().getClassLoader());
     }
 }
